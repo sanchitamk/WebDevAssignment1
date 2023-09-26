@@ -57,6 +57,21 @@ let patientInfo = showPatients(hospital);
 console.log(patientInfo);
 
 
+//Part 3
+let getPatient=function(hospital){
+
+    let randomId = Math.floor(Math.random() * hospital.patients.length);
+    
+     return hospital.patients[randomId].PatientId;
+    ;
+}
+
+    let randomPatientId=getPatient(hospital);
+
+ console.log(randomPatientId);
+
+
+
 
 
     
